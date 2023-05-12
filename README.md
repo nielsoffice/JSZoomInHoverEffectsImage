@@ -92,7 +92,13 @@
            HPHover(cChildrenID, 'hp-firstChild-thunbnail');	
            HPHover(cContainerID, 'hp-container-thunbnail');		 
 		 
-        }			 
+        } else {
+			
+           cContainerID.classList.add('hp-container-thunbnail');
+           cParentID.classList.add('hp-parent-thunbnail');
+           cChildrenID.classList.add('hp-firstChild-thunbnail');
+			 
+        }				 
      }
 	   
      const HPHover = function( et = [] , se ) { 
