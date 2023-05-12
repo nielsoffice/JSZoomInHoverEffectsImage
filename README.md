@@ -132,6 +132,26 @@
  // Anything as to be return querySelectAll() just not null!
  HPThumbnail.q = 'selectAll';		
  HPThumbnail.HPAction();
+ 
+ /*
+ NOTE: et.forEach()  is not a function! 
+ first pirority thos have a children to loop then follow single element no child to loop
+ means div or element have child dynamic loop must be first line then
+ second or last line always the div or single element ! 
+ 
+ // Latest Right Column  
+ HPThumbnail.p = '.hp-latest-col-right-parent';
+ HPThumbnail.c = '.hp-latest-col-right-child';
+ HPThumbnail.b = '.hp-latest-col-right-container';
+ HPThumbnail.q = 'selectAll';		
+ HPThumbnail.HPAction();
+
+ // Latest left bo child or single element Column 
+ HPThumbnail.b = '#_dynamic_list-1612-389';
+ HPThumbnail.p = '.hp-latest-col-left-parent';
+ HPThumbnail.c = '.hp-latest-col-left-child';
+ HPThumbnail.HPAction();
+ */
 	
 })();
 ```
