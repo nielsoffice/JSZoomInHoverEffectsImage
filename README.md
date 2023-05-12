@@ -69,8 +69,8 @@
     
     p : null, 
     c : null,
-	b : null,
-	q : null,
+    b : null,
+    q : null,
 	 
     HPAction : function() {
     
@@ -86,24 +86,24 @@
 	   
       const HPFocus = function() { 
 		 
-	     if(this.q !== null) { 
+         if(this.q !== null) { 
 		   
-		     HPHover(cParentID, 'hp-parent-thunbnail');	 
-		     HPHover(cChildrenID, 'hp-firstChild-thunbnail');	
-		     HPHover(cContainerID, 'hp-container-thunbnail');		 
+           HPHover(cParentID, 'hp-parent-thunbnail');	 
+           HPHover(cChildrenID, 'hp-firstChild-thunbnail');	
+           HPHover(cContainerID, 'hp-container-thunbnail');		 
 		 
-		   }			 
+        }			 
      }
 	   
      const HPHover = function( et = [] , se ) { 
          
-		     et.forEach(function( v ) {
+        et.forEach(function( v ) {
 			   
-		       let tID = '#' +v.id;
-		       let activeID = ___Only(tID)
-		       activeID.classList.add(se);
+	   let tID = '#' +v.id;
+	   let activeID = ___Only(tID)
+	   activeID.classList.add(se);
 				  				 			
-		     });  		   
+	});  		   
      }	  
 	   
      return {
@@ -115,8 +115,8 @@
   },
   __qs : function( e ) {
 	  
-	  if(this.q !== null) { return document.querySelectorAll( e );   } 
-	  return document.querySelector( e );  
+      if(this.q !== null) { return document.querySelectorAll( e );   } 
+      return document.querySelector( e );  
 	  
   }	 
 	 
